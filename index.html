@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="cont-div1">
+  <img src="image.jpg" alt="">
+<h1> Chukwu Jennifer</h1>
+<h3>Ebonyi State, Nigeria</h3>
+    </div>
+ <div class="cont-div2">
+  <p>"font-end developer and avid reader"</p>
+
+ </div>
+ <div class="cont-div3">
+  <div class="github">GitHub</div>
+  <div class="front">Fontend Mentor</div>
+  <div class="link">LinkedIn</div>
+  <div class="twi">Twitter</div>
+ <div class="in">Instagram</div>
+ </div>
+  </div>
+
+
+
+
+  </body>
+</html>
+
+
+
+body {
+    background-color: hsl(240, 3%, 13%);
+    padding: 15px;
+    margin: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    background-color: hsla(240, 5%, 18%, 0.895);
+    margin: 40px auto 4px;
+    padding: 25px;
+    height: 600px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px; /* Adding max-width for responsiveness */
+    box-shadow: 0 0 10px rgba(7, 228, 33, 0.2);
+    position: relative;
+
+
+}
+
+.cont-div1 {
+    margin: 30px 0;
+}
+
+.cont-div2 {
+    margin: 15px 0;
+}
+
+.cont-div3 {
+    margin: 15px 0;
+    color: white;
+}
+
+h1, p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+h3 {
+    colr:hsl(75, 94%, 57%);
+    font-weight: 300;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 80px;
+}
+
+/* Styling for social links */
+.cont-div3 div {
+    background-color: hsl(255, 5%, 35%);
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cont-div3 div:hover {
+    background-color: hsl(240, 7%, 29%);
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 840px) {
+    body{
+        margin: 0px;
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .cont-div1 h1 {
+        font-size: 24px;
+    }
+
+    .cont-div1 h3 {
+        font-size: 16px;
+    }
+
+    .cont-div2 p {
+        font-size: 14px;
+    }
+
+    .cont-div3 div {
+        padding: 10px;
+        margin: 5px;
+        font-size: 12px;
+    }
+}
